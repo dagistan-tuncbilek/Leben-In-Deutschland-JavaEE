@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.4.1/css/bootstrap.min.css"/>
+
+    <title>Leben In Deutschland</title>
+  </head>
+ 
+<body>
+
+<section>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8 ">
+			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+				<a class="navbar-brand rounded"><img src="images/germany-flag-waving-icon-64.png" 
+					class="img-fluid" width="40" alt="Deutsche Flag"> 
+				<img src="images/logo.png" class="img-fluid" width="200" alt="Logo" ></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end"
+					id="navbarNavDropdown">
+					<ul class="navbar-nav nav-pills">
+
+						<li class="nav-item"><a class="nav-link"
+							href="PageServlet1">300 Fragen <span class="sr-only">(current)</span></a></li>
+						<li class="nav-item"><a class="nav-link active" href="#">Prüfung</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#"
+							id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false"> Bundesländer </a>
+							<div class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="LandServlet1">Baden-Württemberg</a> <a
+									class="dropdown-item" href="LandServlet2">Bayern</a> <a
+									class="dropdown-item" href="LandServlet3">Berlin</a> <a
+									class="dropdown-item" href="LandServlet4">Brandenburg</a> <a
+									class="dropdown-item" href="LandServlet5">Bremen</a> <a
+									class="dropdown-item" href="LandServlet6">Hamburg</a> <a
+									class="dropdown-item" href="LandServlet7">Hessen</a> <a
+									class="dropdown-item" href="LandServlet8">Mecklenburg-Vorpommern</a> <a
+									class="dropdown-item" href="LandServlet9">Niedersachsen</a> <a
+									class="dropdown-item" href="LandServlet10">Nordrhein-Westfalen</a> <a
+									class="dropdown-item" href="LandServlet11">Rheinland-Pfalz</a> <a
+									class="dropdown-item" href="LandServlet12">Saarland</a> <a
+									class="dropdown-item" href="LandServlet13">Sachsen</a> <a
+									class="dropdown-item" href="LandServlet14">Sachsen-Anhalt</a> <a
+									class="dropdown-item" href="LandServlet15">Schleswig-Holstein</a> <a
+									class="dropdown-item" href="LandServlet16">Thüringen</a>
+							</div></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
+
+<div class="row">
+
+	<div class="col-sm-2"></div>
+
+	<div class="col-sm-8 text-center">
+		<br/><br/><h2>Bitte wählen Sie ein Bundesland aus.</h2><br/>
+		<form action="QuizServlet" method="get">
+			<button class="btn btn-primary btn-lg" role="button" name="subject" type="submit" value="300">Baden-Württemberg</button>
+		   	<button class="btn btn-success btn-lg" role="button" name="subject" type="submit" value="310">Bayern</button>
+		    <button class="btn btn-warning btn-lg" role="button" name="subject" type="submit" value="320">Berlin</button>
+		    <button class="btn btn-danger btn-lg" role="button" name="subject" type="submit" value="330">Brandenburg</button>
+		    <br/><br/><br/>
+			<button class="btn btn-danger btn-lg" role="button" name="subject" type="submit" value="340">Bremen</button>
+		   	<button class="btn btn-secondary btn-lg" role="button" name="subject" type="submit" value="350">Hamburg</button>
+		    <button class="btn btn-primary btn-lg" role="button" name="subject" type="submit" value="360">Hessen</button>
+		    <button class="btn btn-warning btn-lg" role="button" name="subject" type="submit" value="370">Mecklenburg-Vorpommern</button>
+			<br/><br/><br/>
+			<button class="btn btn-primary btn-lg" role="button" name="subject" type="submit" value="380">Niedersachsen</button>
+		   	<button class="btn btn-danger btn-lg" role="button" name="subject" type="submit" value="390">Nordrhein-Westfalen</button>
+		    <button class="btn btn-secondary btn-lg" role="button" name="subject" type="submit" value="400">Rheinland-Pfalz</button>
+		    <button class="btn btn-success btn-lg" role="button" name="subject" type="submit" value="410">Saarland</button>		
+			<br/><br/><br/>
+			<button class="btn btn-success btn-lg" role="button" name="subject" type="submit" value="420">Sachsen</button>
+		   	<button class="btn btn-warning btn-lg" role="button" name="subject" type="submit" value="430">Sachsen-Anhalt</button>
+		    <button class="btn btn-danger btn-lg" role="button" name="subject" type="submit" value="440">Schleswig-Holstein</button>
+		    <button class="btn btn-primary btn-lg" role="button" name="subject" type="submit" value="450">Thüringen</button>		
+		</form>
+		<br/><br/><br/>
+	</div>
+
+	<div class="col-sm-2"></div>
+	
+</div>
+
+<script src="webjars/jquery/3.0.0/jquery.min.js"></script>
+<script src="webjars/popper.js/1.14.3/popper.min.js"></script>
+<script src="webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
