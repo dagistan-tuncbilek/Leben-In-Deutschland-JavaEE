@@ -1,4 +1,4 @@
-﻿# Leben-In-Deutschland-JavaServlets
+﻿# Leben In Deutschland JavaEE
  
  An exam application for foreigners in Germany.
  
@@ -7,3 +7,4 @@
  - JSP
  - Basic CSS
  - HTML Forms
+ - Tomcat Server
