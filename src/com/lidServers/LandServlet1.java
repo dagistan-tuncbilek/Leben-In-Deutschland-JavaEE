@@ -16,7 +16,6 @@ import com.data.Question;
 public class LandServlet1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		List<Question> questions = Data.fragenLand(300);
@@ -25,8 +24,6 @@ public class LandServlet1 extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }
